@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                   </div>
 
                   <div className="hidden  sm:block">
-                    <div className="flex space-x-6">
+                    <div className="flex space-x-4">
                       {mainNavigation.map((item) => (
                         <div key={item.name} className="relative group">
                           <a
@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
                     </div>
                   </div>
                   <div className="hidden md:hidden lg:block items-center">
-                    <button className="relative inline-flex items-center justify-center px-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-lime-600 rounded-full shadow-md group sm:w-auto md:w-auto lg:w-auto">
+                    <button className="animate-bounce relative inline-flex items-center justify-center px-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-lime-600 rounded-full shadow-md group sm:w-auto md:w-auto lg:w-auto">
                       <span className="absolute inset-0 flex items-center justify-center text-white duration-300 -translate-x-full bg-green-600 group-hover:translate-x-0 ease">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
                           <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
               </div>
             </div>
             <Disclosure.Panel className="sm:hidden">
-              <div className="space-y-1 px-2 pb-3 pt-2 absolute z-2 bg-white">
+              <div className="space-y-1 px-2 pb-3 pt-2 z-auto bg-white">
                 {mainNavigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
