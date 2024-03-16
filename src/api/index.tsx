@@ -6,3 +6,6 @@ import { http } from '../utils'
 export function productdata() {
   return http.get('/api/home')
 }
+export function getcategoriesdata() {
+  return http.get('/api/getcategories')
+}
