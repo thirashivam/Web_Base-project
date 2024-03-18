@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import React from 'react';
 import classNames from 'classnames';
 import logo from '../images/logo.png'
+import { Link } from 'gatsby';
 
 interface NavigationItem {
   name: string;
@@ -39,7 +40,9 @@ const Navbar: React.FC = () => {
 
                 <div className="flex flex-1  sm:items-center items-center sm:justify-between">
                   <div className="flex  flex-shrink-0 items-center">
-                    <img className="h-5 w-25" src={logo} alt="Logo" />
+                    <Link to="/">
+                      <img className="h-5 w-25" src={logo} alt="Logo" />
+                    </Link>
                   </div>
 
                   <div className="hidden md:hidden lg:block justify-between px-3 py-0">

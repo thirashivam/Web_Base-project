@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-    baseURL: 'https://api.bongiapp.com/',
+    baseURL: 'http://localhost:3001/',
 })
 
 http.interceptors.request.use(request => {

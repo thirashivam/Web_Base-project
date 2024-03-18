@@ -9,3 +9,6 @@ export function productdata() {
 export function getcategoriesdata() {
   return http.get('/api/getcategories')
 }
+export function getProductById(id) {
+  return http.get('/api/getproduct/:id')
+}
